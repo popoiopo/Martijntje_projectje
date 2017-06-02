@@ -6,6 +6,9 @@ window.onload = function() {
   .await(begin_magic);
 
   function begin_magic(error, bachelor, master) {
+  	if (error) throw error;
+
+  	
     drawChord(bachelor, master);
   }
 };
